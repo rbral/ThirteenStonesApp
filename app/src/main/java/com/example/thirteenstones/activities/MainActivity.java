@@ -3,6 +3,7 @@ package com.example.thirteenstones.activities;
 import android.os.Bundle;
 
 import com.example.thirteenstones.R;
+import com.example.thirteenstones.lib.DialogUtils;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,12 +56,42 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_new_game) {
+            startNextNewGame();
+            return true;
+        } else if (id == R.id.action_statistics) {
+            showStatistics();
+            return true;
+        } else if (id == R.id.action_reset_stats) {
+            // mGame.resetStatistics();
+            return true;
+        } else if (id == R.id.action_settings) {
+            showSettings();
+            return true;
+        } else if (id == R.id.action_about) {
+            showAbout();
             return true;
         }
 
+        //noinspection SimplifiableIfStatement
+
+
         return super.onOptionsItemSelected(item);
+    }
+
+    private void startNextNewGame() {
+
+    }
+
+    private void showStatistics() {
+    }
+
+    private void showSettings() {
+    }
+
+    private void showAbout() {
+        DialogUtils.showInfoDialog(this,"About 13 Stones",
+                "This is our second in-class app of the semester!");
     }
 
 
