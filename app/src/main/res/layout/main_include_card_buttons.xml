@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Widget.Material3.CardView.Outlined"
+    app:strokeColor="?attr/colorSecondary"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/double_activity_margin"
@@ -20,18 +21,15 @@
         android:orientation="horizontal" >
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/BorderlessButton13Stones"
         android:text="@string/one" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/BorderlessButton13Stones"
         android:text="@string/two" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/BorderlessButton13Stones"
         android:text="@string/three" />
 
     </LinearLayout>
