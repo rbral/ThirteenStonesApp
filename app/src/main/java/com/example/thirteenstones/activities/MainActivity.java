@@ -1,5 +1,6 @@
 package com.example.thirteenstones.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.thirteenstones.R;
@@ -84,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showStatistics() {
+        Intent intent = new Intent(getApplicationContext(), StatisticsActivity.class);
+        startActivity(intent);
     }
 
     private void showSettings() {

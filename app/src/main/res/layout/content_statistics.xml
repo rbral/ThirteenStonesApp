@@ -6,12 +6,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
-    <TextView
-        android:id="@+id/tv_hello_world"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Hello, world!"
-        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
