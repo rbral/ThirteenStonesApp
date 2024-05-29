@@ -20,6 +20,6 @@ public class SplashActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(Build.VERSION.SDK_INT < 28 ? MODE_NIGHT_AUTO_BATTERY :
                         MODE_NIGHT_FOLLOW_SYSTEM);
         startActivity (new Intent(getApplicationContext (), MainActivity.class));
-        finish ();
+        finish();
     }
 }
