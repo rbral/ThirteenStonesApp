@@ -19,5 +19,6 @@
         android:gravity="center"
         android:text="@string/banner_text"
         android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        android:textColor="?attr/colorPrimary"
         android:textStyle="bold" />
 </com.google.android.material.appbar.AppBarLayout>
