@@ -1,6 +1,6 @@
 package com.example.thirteenstones.activities;
 
-import static com.example.thirteenstones.lib.DialogUtils.showInfoDialog;
+import static com.example.thirteenstones.lib.Utils.showInfoDialog;
 import static com.example.thirteenstones.models.ThirteenStones.getGameFromJSON;
 import static com.example.thirteenstones.models.ThirteenStones.getJSONFromGame;
 
@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.thirteenstones.R;
-import com.example.thirteenstones.lib.DialogUtils;
 import com.example.thirteenstones.models.ThirteenStones;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -22,10 +21,7 @@ import android.view.View;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
-import androidx.core.view.WindowCompat;
 
-
-import com.example.thirteenstones.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;

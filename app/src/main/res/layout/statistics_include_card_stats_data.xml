@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/default_activity_margin"
     tools:showIn="@layout/content_statistics">
 
@@ -25,7 +25,6 @@
         app:layout_constraintStart_toEndOf="@+id/tv_label_games_played"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="18" />
-
     <TextView
         android:id="@+id/tv_label_header_player"
         style="@style/TextViewStatistics.SecondaryTextColor.Bold"
@@ -38,7 +37,6 @@
         app:layout_constraintEnd_toStartOf="@+id/tv_label_header_wins"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_label_header_wins" />
-
     <TextView
         android:id="@+id/tv_label_header_wins"
         style="@style/TextViewStatistics.SecondaryTextColor.Bold"
@@ -49,7 +47,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_label_games_played" />
-
     <TextView
         android:id="@+id/tv_label_header_win_pct"
         style="@style/TextViewStatistics.SecondaryTextColor.Bold"
@@ -62,7 +59,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_label_header_wins"
         app:layout_constraintTop_toTopOf="@+id/tv_label_header_wins" />
-
     <TextView
         android:id="@+id/tv_label_player1_number"
         style="@style/TextViewStatistics.SecondaryTextColor"
@@ -78,7 +74,6 @@
         app:layout_constraintStart_toStartOf="@+id/tv_label_header_wins"
         app:layout_constraintTop_toBottomOf="@+id/tv_label_header_wins"
         tools:text="6" />
-
     <TextView
         android:id="@+id/tv_data_player1_win_percent"
         style="@style/TextViewStatistics.SecondaryTextColor"
@@ -92,7 +87,6 @@
         android:text="@string/two"
         app:layout_constraintEnd_toEndOf="@+id/tv_label_player1_number"
         app:layout_constraintTop_toTopOf="@+id/tv_data_player2_wins" />
-
     <TextView
         android:id="@+id/tv_data_player2_wins"
         style="@style/TextViewStatistics.SecondaryTextColor"
@@ -107,7 +101,4 @@
         app:layout_constraintStart_toStartOf="@+id/tv_data_player1_win_percent"
         app:layout_constraintTop_toTopOf="@+id/tv_data_player2_wins"
         tools:text="50%" />
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
