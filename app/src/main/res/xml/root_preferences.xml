@@ -25,5 +25,4 @@
             app:title="@string/win_on_last_pick_title" />
     </PreferenceCategory>
 
-
 </PreferenceScreen>
