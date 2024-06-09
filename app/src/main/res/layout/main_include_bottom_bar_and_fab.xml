@@ -23,21 +23,17 @@
                 android:id="@+id/tv_status_current_player"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/current_player"
                 android:gravity="start"
                 android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
-                android:textColor="?attr/colorSecondary"
-                />
+                android:textColor="?attr/colorSecondary" />
 
             <TextView
                 android:id="@+id/tv_status_stones_remaining"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/stones_remaining_in_pile"
                 android:gravity="start"
                 android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
-                android:textColor="?attr/colorTertiary"
-                 />
+                android:textColor="?attr/colorTertiary" />
         </LinearLayout>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
@@ -46,9 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
+        android:contentDescription="@string/fab"
         app:layout_anchor="@id/bottom_bar"
         app:layout_anchorGravity="center"
-        app:srcCompat="@android:drawable/ic_dialog_info"
-
-        android:contentDescription="@string/fab" />
+        app:srcCompat="@android:drawable/ic_dialog_info" />
 </merge>
